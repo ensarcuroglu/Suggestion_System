@@ -43,9 +43,19 @@ model = RandomForestRegressor(n_estimators=100, random_state=42)
 # Modeli eğitme
 model.fit(X_train, y_train)
 
+# Performans değerlendirme
+y_pred = model.predict(X_test)
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print(f'Mean Squared Error: {mse}')
+print(f'R² Score: {r2}')
+
+# Performans kategorisini belirlemek için gerekli olan çeyrek değerler
+q1 = data['performance_score'].quantile(0.25)
+q3 = data['performance_score'].quantile(0.75)
 
 
-# Performans kategorisi belirleyen fonksiyon
+# Performans sınıflandırması
 def classify_performance(score, q1, q3):
     if score >= q3:
         return "Performansı artışta"
@@ -54,9 +64,6 @@ def classify_performance(score, q1, q3):
     else:
         return "Performansı düşüşte"
 
-# Performans kategorisini belirlemek için gerekli olan çeyrek değerler
-q1 = data['performance_score'].quantile(0.25)
-q3 = data['performance_score'].quantile(0.75)
 
 
 # Model ve fonksiyonu bir sınıf ile birleştirme
