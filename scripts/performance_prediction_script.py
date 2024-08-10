@@ -23,10 +23,10 @@ data['average_score'] = data[['math_score', 'history_score', 'physics_score', 'c
 # Ağırlıklı performans puanı: Not ortalamasının yarısı + diğer değişkenlerin etkisi
 data['performance_score'] = (
     data['average_score'] * 0.5
-    - data['part_time_job'] * 0.1
-    - data['absence_days'] * 0.1
-    - data['extracurricular_activities'] * 0.1
-    + data['weekly_self_study_hours'] * 0.2
+    - data['part_time_job'] * 0.2
+    - data['absence_days'] * 0.2
+    + data['extracurricular_activities'] * 0.1
+    + data['weekly_self_study_hours'] * 0.3
 )
 
 # Özellik ve hedef değişkenleri ayırma

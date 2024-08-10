@@ -30,9 +30,9 @@ performance_model = joblib.load('C:/Users/Ensar/Desktop/OneriSistemi/models/stud
 
 # Yeni veri
 new_data = pd.DataFrame({
-    'average_score': [80],
+    'average_score': [70],
     'part_time_job': [1],
-    'absence_days': [10],
+    'absence_days': [2],
     'extracurricular_activities': [1],
     'weekly_self_study_hours': [25]
 })
