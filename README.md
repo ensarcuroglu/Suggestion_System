@@ -1,26 +1,26 @@
-# OneriSistemi
+# Suggestion_System
 
-OneriSistemi, öğrenci performansını analiz eden ve öneriler sunan bir makine öğrenimi tabanlı projedir. Bu proje, öğrenci verilerini analiz ederek, bireysel öğrenciye özgü öneriler sunmayı amaçlar.
+Suggestion_System is a machine learning-based project that analyzes student performance and provides recommendations. This project aims to analyze student data and offer personalized suggestions tailored to individual students.
 
-## Proje Yapısı
+## Project Structure
 
-- **archive/**: Önceki sürümler veya arşivlenmiş içerikler.
-- **data/**: Analizlerde kullanılan veri setleri.
-- **models/**: Eğitilmiş makine öğrenimi modelleri.
-- **scripts/**: Yardımcı Python betikleri.
-- **venv/**: Sanal Python ortamı için gerekli dosyalar.
-- **requirements.txt**: Projede kullanılan Python kütüphanelerinin listesi.
+- **archive/**: Previous versions or archived content.
+- **data/**: Datasets used for analysis.
+- **models/**: Trained machine learning models.
+- **scripts/**: Auxiliary Python scripts.
+- **venv/**: Files for the virtual Python environment.
+- **requirements.txt**: A list of Python libraries used in the project.
 
-## Özellikler
+## Features
 
-- Öğrenci verilerine dayalı performans tahminleri.
-- Öneri sistemi ile öğrencilerin başarı seviyesini artırmaya yönelik tavsiyeler.
-- Veri analizi ve model eğitimi.
-- Performans verilerinin görselleştirilmesi.
+- Performance predictions based on student data.
+- Recommendation system that provides suggestions to improve student success.
+- Data analysis and model training.
+- Visualization of performance data.
 
-## Gereksinimler
+## Requirements
 
-Projeyi çalıştırmak için aşağıdaki bağımlılıkları yüklemeniz gerekmektedir:
+To run the project, you need to install the following dependencies:
 
 ```bash
 pip install -r requirements.txt
