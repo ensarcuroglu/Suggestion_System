@@ -17,6 +17,7 @@ Suggestion_System is a machine learning-based project that analyzes student perf
 - Recommendation system that provides suggestions to improve student success.
 - Data analysis and model training.
 - Visualization of performance data.
+- student risk analysis
 
 ## Requirements
 
